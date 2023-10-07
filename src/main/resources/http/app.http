@@ -1,0 +1,18 @@
+GET localhost:8080/api/cinemas
+
+GET localhost:8080/api/cities
+
+POST localhost:8080/api/cities
+body: { name: "sample city name",
+        location: "sample city location" }
+
+GET localhost:8080/api/cities/{city_id}/hotels
+
+POST localhost:8080/api/cities/{city_id}/hotels
+body: { name: "Sample hotel name" }
+
+GET localhost:8080/api/cinemas/{cinema_id}/movies
+
+POST localhost:8080/api/cinemas/{cinema_id}/movies
+body: { title: "sample movie name",
+        location: "sample movie description" }
